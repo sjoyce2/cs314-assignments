@@ -4,15 +4,40 @@
 }
 
 html {
+	position: relative;
 	cursor: default;
-}
-
-body {
-	margin: 0px 0px 0px 0px;
+	min-height: 100%;
 }
 
 header {
+	margin-top: 30px;
+	margin-bottom: 30px;
 	text-align: center;
+}
+
+h1 { 
+    display: block;
+    font-size: 3em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+p {
+	margin-bottom: 10px;
+	margin-top: 10px;
 }
 
 footer {
@@ -42,6 +67,7 @@ button:active {
 }
 
 .about {
+	padding: 10px 10px 10px 10px;
 	font-family: Montserrat, sans-serif;
 	box-sizing: border-box;
 	width: 100%;
