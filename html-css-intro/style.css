@@ -1,4 +1,95 @@
-.footerBox {
+@font-face {
+	font-family: "Montserrat";
+	src: url(Montserrat/Montserrat-Regular.ttf);
+}
 
+html {
+	cursor: default;
+}
+
+body {
+	margin: 0px 0px 0px 0px;
+}
+
+header {
+	text-align: center;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+button:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+button:active {
+	cursor: progress;
+	background-color: black;
+}
+
+.anotherFlex {
+	width: 200px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: right;
+}
+
+.about {
+	font-family: Montserrat, sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	background-color: lightblue;
+	transform: translate(-50% -50%);
+	text-align: center;
+}
+
+.flexContainer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+	transform: translate(-50% -50%);
+}
+
+.flag {
+	width: 350px;
+	height: 250px;
+}
+
+.loon {
+	width: 350px;
+	height: 350px;
+}
+
+.soccer {
+	background-color: darkblue;
+	color: gray;
+	text-align: center;
+	width: 60px;
+	height: 40px;
+	border-radius: 10px;
+	border: 2px 2px 2px 2px;
+	border-color: gray;
+}
+
+.darkBlue {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 250px;
+	background-color: darkblue;
+}
+
+.copyright {
+	background-color: black;
+	color: white;
 	box-sizing: border-box;
 }
