@@ -1,0 +1,69 @@
+
+
+@keyframes fadeIn {
+	0% {opacity: 0;}
+	50% {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+@keyframes fadeOut {
+	0% {opacity: 1;}
+	50% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+body {
+}
+
+#overlay {
+	display: flex;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background-image: radial-gradient(white, gray, black);
+	align-items: center;
+	justify-content: center;
+}
+
+.outer {
+	background-image: radial-gradient(green, gray);
+	display: flex;
+	height: 500px;
+	width: 500px;
+	border-radius: 100px;
+	align-items: center;
+	justify-content: center;
+	transition: transform 2s;
+}
+
+.outer:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+.inner {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 500px;
+	height: 500px;
+}
+
+.circle {
+	background-image: linear-gradient(black, green);
+	margin: 75px;
+	height: 100px;
+	width: 100px;
+	border-radius: 50px;
+	transition: background-image 2s;
+	animation: fadeIn 10s infinite;
+}
+
+.square {
+	background-image: linear-gradient(green, gold, green);
+	margin: 75px;
+	height: 100px;
+	width: 100px;
+	border-radius: 20px;
+	animation: fadeOut 10s infinite;
+}

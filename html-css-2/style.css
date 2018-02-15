@@ -1,0 +1,124 @@
+@font-face {
+	font-family: "Montserrat";
+	src: url(Montserrat/Montserrat-Regular.ttf);
+}
+
+html {
+	position: relative;
+	cursor: default;
+	min-height: 100%;
+}
+
+header {
+	margin: 20px;
+	text-align: center;
+}
+
+h1 { 
+    display: block;
+    font-size: 3em;
+    margin: 0.5em;
+    font-weight: bold;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    font-weight: bold;
+}
+
+p {
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+footer {
+	position: absolute;
+	margin-top: 100px;
+	bottom: 0;
+	width: 100%;
+}
+
+button:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+button:active {
+	cursor: progress;
+	background-color: black;
+}
+
+#body {
+    margin-bottom: 120px;
+}
+
+.anotherFlex {
+	width: 200px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: right;
+}
+
+.about {
+	padding: 10px;
+	font-family: Montserrat, sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	background-image: linear-gradient(lightblue, gray);
+	transform: translate(-50% -50%);
+	text-align: center;
+}
+
+.flexContainer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+	transform: translate(-50% -50%);
+}
+
+.flag {
+	width: 350px;
+	height: 250px;
+}
+
+.loon {
+	width: 350px;
+	height: 350px;
+}
+
+.smallLoon {
+	width: 25%;
+	height: 25%;
+}
+
+.soccer {
+	background-color: darkblue;
+	color: gray;
+	text-align: center;
+	width: 60px;
+	height: 40px;
+	border-radius: 10px;
+	border: 2px 2px 2px 2px;
+	border-color: gray;
+}
+
+.darkBlue {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100px;
+	background-color: darkblue;
+}
+
+.copyright {
+	background-color: black;
+	color: white;
+	box-sizing: border-box;
+}
