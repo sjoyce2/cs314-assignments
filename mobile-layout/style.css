@@ -1,0 +1,184 @@
+@font-face {
+	font-family: "Montserrat";
+	src: url("montserrat-regular-webfont.woff");
+	src: url("montserrat-regular-webfont.woff2");
+	src: url("montserrat-regular-webfont.eof");
+	src: url("montserrat-regular-webfont.ttf");
+}
+
+html {
+	font-family: Montserrat;
+	cursor: default;
+}
+
+button {
+	border: transparent;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+p {
+	margin: 5px;
+	margin-bottom: 20px;
+}
+
+.outerHeader {
+	width: 100%;
+	min-height: 5%;
+	position: relative;
+	top: 20;
+	left: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: right;
+	background-color: black;
+}
+
+.headerFlex {
+	padding: 15px 15px 15px 0px;
+	width: 25%;
+	position: relative;
+	top: 20;
+	left: 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: right;
+}
+
+#upperIcon {
+	color: white;
+	padding: 10px;
+	font-size: 2em;
+}
+
+.centerFlex {
+	position: relative;
+	clear: both;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.centerBox {
+	background-color: lightgray;
+	padding: 50px;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	align-items: center;
+}
+
+.lowerFlex {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+}
+
+.innerLowerBox {
+	width: 25%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	text-align: center;
+	flex-direction: column;
+	transform: translateY(50%);
+}
+
+.viewMore {
+	color: white;
+	background-color: gray;
+	padding: 10px 20px 10px;
+	border-radius: 5px;
+	transition: opacity 1s ease;
+}
+
+.viewMore:hover {
+	cursor: pointer;
+	opacity: 0.5;
+}
+
+#mainButton {
+	color: white;
+	background-color: gray;
+	padding: 10px 20px 10px;
+	border-radius: 5px;
+	transition: opacity 1s ease;
+}
+
+#mainButton:hover {
+	cursor: pointer;
+	opacity: 0.5;
+}
+
+#bodyIcon1 {
+	font-size: 4em;
+	padding: 20px;
+}
+
+#bodyIcon2 {
+	font-size: 4em;
+	padding: 20px;
+}
+
+#bodyIcon3 {
+	font-size: 4em;
+	padding: 20px;
+}
+
+@media only screen and (max-width: 760px) {
+	h1 {
+		font-size: 2em;
+	}
+
+	#upperIcon {
+		font-size: 1.5em;
+	}
+
+	.viewMore {
+		padding: 5px 10px 5px;
+		font-size: 0.75em;
+	}
+
+	#mainButton {
+		padding: 5px 10px 5px;
+		font-size: 0.75em;
+	}
+
+	.headerFlex {
+		padding-left: 10px;
+		width: 50%;
+		justify-content: space-around;
+	}
+
+	.lowerFlex {
+		flex-direction: column;
+	}
+
+	.innerLowerBox {
+		width: 100%;
+		padding-bottom: 20px;
+		transform: none;
+	}
+
+	#bodyIcon1 {
+		font-size: 2em;
+		padding: 10px;
+	}
+
+	#bodyIcon2 {
+		font-size: 2em;
+		padding: 10px;
+	}
+
+	#bodyIcon3 {
+		font-size: 2em;
+		padding: 10px;
+	}
+}
