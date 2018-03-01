@@ -1,0 +1,150 @@
+@font-face {
+	font-family: "Montserrat";
+	src: url("montserrat-regular-webfont.woff");
+	src: url("montserrat-regular-webfont.woff2");
+	src: url("montserrat-regular-webfont.eof");
+	src: url("montserrat-regular-webfont.ttf");
+}
+
+html {
+	box-sizing: content-box;
+	width: 100%;
+	font-family: "Montserrat";
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	min-height: 25%;
+	height: 30%;
+	background-color: lightblue;
+	align-items: center;
+	text-align: center;
+}
+
+h1 {
+	margin: 30px;
+	font-size: 3em;
+}
+
+p {
+	font-size: 1.5em;
+	margin: 10px;
+}
+
+
+label {
+	padding: 10px;
+	margin: 10px;
+}
+
+input {
+	padding: 10px;
+	margin: 10px;
+	border-radius: 10px;
+	border: solid lightgray;
+	transition: 1s;
+}
+
+input[type="text"]:focus {
+	outline: none;
+	box-shadow: 0px 0px 10px 2px lightblue;
+}
+
+input[type="number"]:focus {
+	outline: none;
+	box-shadow: 0px 0px 10px 2px lightblue;
+}
+
+input[type="email"]:focus {
+	outline: none;
+	box-shadow: 0px 0px 10px 2px lightblue;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+}
+
+input[type="submit"]:hover {
+	background-color: lightblue;
+	border-color: lightblue;
+}
+
+input[type="submit"]:focus {
+	outline: none;
+	background-color: black;
+	border-color: black;
+}
+
+input::placeholder {
+	color: lightblue;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+textarea {
+	border-radius: 10px;
+	border: solid lightgray 2px;
+	min-height: 100px;
+	margin: 10px;
+	padding: 10px;
+	resize: none;
+}
+
+textarea::placeholder {
+	color: lightblue;
+}
+
+textarea:focus {
+	outline: none;
+	box-shadow: 0px 0px 10px 2px lightblue;
+}
+
+select {
+	padding: 10px;
+	border-radius: 10px;
+	margin: 10px;
+}
+
+select:focus {
+	outline: none;
+	box-shadow: 0px 0px 10px 2px lightblue;
+	border-radius: 0px;
+}
+
+.labelInput {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+}
+
+.textLabel {
+	padding: 10px 0px 0px;
+	margin: 10px 10px 0px;
+}
+
+.radioLabel {
+	margin-right: 0px;
+	padding-right: 0px;
+}
+
+.innerRadio {
+	width: 100%;
+}
+
+.radioBox {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+	.labelInput {
+		width: 75%;
+	}
+}
