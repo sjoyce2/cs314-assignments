@@ -1,0 +1,167 @@
+@font-face {
+	font-family: "Raleway";
+	src: url("raleway.woff");
+	src: url("raleway.woff2");
+	src: url("raleway.eof");
+	src: url("raleway.ttf");
+}
+
+html {
+	font-family: "Raleway", sans-serif;
+	color: #585a3c;
+	box-sizing: content-box;
+	width: 100%;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 2.5em;
+	padding: 40px;
+}
+
+h5 {
+	font-weight: bold;
+	font-size: 1.5em;
+	padding: 15px;
+}
+
+h6 {
+	font-size: 1.25em;
+	padding: 10px;
+	padding-left: 15px;
+}
+
+p {
+	padding-left: 15px;
+}
+
+header {
+	box-sizing: border-box;
+	background-color: lightgray;
+	text-align: center;
+}
+
+
+a {
+	text-decoration: none;
+	color: #585a3c;
+}
+
+body {
+	background: url("background0.jpg") no-repeat center center fixed;
+}
+
+.outerFlexHead {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.flexHead {
+	display: flex;
+	flex-direction: row;
+}
+
+.toolbar {
+	padding: 10px;
+	transition: .5s ease;
+}
+
+.toolbar:hover {
+	opacity: .5;
+}
+
+.title {
+	color: black;
+	text-align: center;
+}
+
+.workFlex {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 50%;
+	max-width: 100%;
+}
+
+.work {
+	background-color: lightgray;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 20%;
+	text-align: left;
+	padding: 10px;
+	margin-bottom: 10px;
+	transition: 1s ease;
+}
+
+.work:hover {
+	opacity: .5;
+	background-color: white;
+	box-shadow: 0px 0px 10px 2px;
+}
+
+.outerFlexFoot {
+	position: fixed;
+	display: flex;
+	bottom: 0;
+	clear: both;
+	width: 100%;
+	min-height: 30px;
+	align-items: center;
+	background-color: lightgray;
+	color: #585a3c;
+}
+
+@media only screen and (max-width: 760px) {
+	.background {
+		min-height: 500px;
+		height: 100%;
+		min-width: 100%;
+	}
+
+	.outerFlexHead {
+		justify-content: center;
+	}
+
+	.main {
+		min-height: 50%;
+		justify-content: space-around;
+	}
+
+	.schoolFlex {
+		min-height: 75%;
+		justify-content: space-between;
+	}
+
+	.school {
+
+	}
+
+	h1 {
+		font-size: 2.5em;
+		padding: 10px;
+	}
+
+	h2 {
+		font-size: 2em;
+		padding: 10px;
+	}
+
+	h4 {
+		font-size: 1.25em;
+		padding: 10px;
+	}
+
+	h5 {
+		font-size: 1em;
+		padding: 5px;
+	}
+
+	h6 {
+		font-size: 1em;
+		padding: 5px;
+	}
+}
