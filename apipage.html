@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1">
+	    <title>Beers</title>
+	    <link rel="stylesheet" type="text/css" href="reset.css">
+	    <link rel="stylesheet" type="text/css" href="apipage.css">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+	  	<header>
+	      <div class="outerFlexHead">
+	        <div class="flexHead"> 
+	            <a href="index.html" class="toolbar">HOME</a>
+	            <a href="formpage.html" class="toolbar">SEARCH STATS</a>
+	            <a href="mappage.html" class="toolbar">STADIUM LOCATIONS</a>
+	            <a href="apipage.html" class="toolbar">MORE STATS</a>
+	        </div>
+	      </div>
+	    </header>
+	    <h1>Beers to Drink at the Match</h1>
+	    <table id = "beers">
+	    	<tr>
+	    		<th>Beer</th>
+	    		<th>Description</th>
+	    		<th>First Brew Date</th>
+	    	</tr>
+	    </table>
+	    <button onclick="loadRest()" id="showAll">Show All</button>
+		<script src = "apipage.js"></script>
+		<div class="outerFlexFoot">
+	        <div class="flexFoot">
+	        	<h6>Copyright 2018</h6>
+	        </div>
+    	</div>
+	</body>
+</html>

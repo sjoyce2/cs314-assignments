@@ -1,0 +1,196 @@
+@font-face {
+	font-family: "Raleway";
+	src: url("raleway.woff");
+	src: url("raleway.woff2");
+	src: url("raleway.eof");
+	src: url("raleway.ttf");
+}
+
+html {
+	font-family: "Raleway", sans-serif;
+	color: #585a3c;
+}
+
+body {
+	text-align: center;
+	align-items: center;
+}
+
+h1 {
+	font-size: 4em;
+	font-weight: bold;
+	padding: 25px;
+	color: #585a3c;
+}
+
+h2 {
+	font-size: 2.5em;
+	padding: 20px;
+}
+
+h4 {
+	font-size: 1.75em;
+	padding: 20px;
+}
+
+h5 {
+	font-size: 1.5em;
+	padding: 15px;
+}
+
+h6 {
+	font-size: 1.25em;
+	padding: 10px;
+}
+
+p {
+	padding: 15px;
+}
+
+a {
+	margin: 10px;
+	text-decoration: none;
+	color: #585a3c;
+}
+
+table {
+	min-width: 100%;
+	margin-bottom: 30px;
+}
+
+th {
+	min-width: 33%;
+	font-weight: bold;
+	font-size: 1.5em;
+	padding: 20px;
+}
+
+td {
+	font-size: 1.5em;
+	padding: 20px;
+}
+
+header {
+	box-sizing: border-box;
+	background-color: lightgray;
+	text-align: center;
+}
+
+button {
+	color: #585a3c;
+	background-color: lightgray;
+	padding: 10px;
+	border-radius: 15px;
+	border: solid;
+	margin-bottom: 65px;
+}
+
+.outerFlexHead {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.flexHead {
+	display: flex;
+	flex-direction: row;
+}
+
+.toolbar {
+	padding: 10px;
+	transition: .5s ease;
+}
+
+.toolbar:hover {
+	opacity: .5;
+}
+
+.contactInfo {
+	box-sizing: border-box;
+	padding: 20px;
+	text-align: center;
+	width: 100%;
+}
+
+.flexForm {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 40px;
+}
+
+.innerFlex {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin: 10px;
+}
+
+.outerFlexFoot {
+	position: fixed;
+	display: flex;
+	bottom: 0;
+	clear: both;
+	width: 100%;
+	min-height: 30px;
+	align-items: center;
+	background-color: lightgray;
+	color: #585a3c;
+}
+
+@media only screen and (max-width: 760px) {
+	.background {
+		min-height: 500px;
+		height: 100%;
+		min-width: 100%;
+	}
+
+	.outerFlexHead {
+		justify-content: center;
+	}
+
+	.main {
+		min-height: 50%;
+		justify-content: space-around;
+	}
+
+	.schoolFlex {
+		min-height: 75%;
+		justify-content: space-between;
+	}
+
+	.school {
+
+	}
+
+	.innerFlex {
+		width: 50%;
+	}
+
+	h1 {
+		font-size: 2.5em;
+		padding: 10px;
+	}
+
+	h2 {
+		font-size: 2em;
+		padding: 10px;
+	}
+
+	h4 {
+		font-size: 1em;
+		padding: 10px;
+	}
+
+	h5 {
+		font-size: 1em;
+		padding: 5px;
+	}
+
+	h6 {
+		font-size: 1em;
+		padding: 5px;
+	}
+}

@@ -1,80 +1,106 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <title>Top Premier League Clubs</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Final Project</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
     <body>
         <header>
-            <h1>"Big Six" Premier League Clubs</h1>
+          <div class="outerFlexHead">
+            <div class="flexHead"> 
+              <a href="index.html" class="toolbar">HOME</a>
+              <a href="formpage.html" class="toolbar">SEARCH STATS</a>
+              <a href="mappage.html" class="toolbar">STADIUM LOCATIONS</a>
+              <a href="apipage.html" class="toolbar">MORE STATS</a>
+            </div>
+          </div>
         </header>
-        <article>
-            <p>
-                The top six Premier League clubs are generally in the top six spots in
-                the league, as their name suggests. However, the order of these teams changes
-                often. The standings are decided by the following factors, in order of importance:
-            </p>
-            <ol>
-                <li>Points (3 for each win, 1 for each tie)</li>
-                <li>Goal Differential (Goals scored - Goals conceded)</li>
-                <li>Goals scored</li>
-                <li>Head-to-head results</li>
-                <li>Various other criteria</li>
-            </ol>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Logo</th>
-                        <th>Team</th>
-                        <th>Games Played</th>
-                        <th>Points</th>
-                    </tr>
-                </thead>
-                <tr>
-                    <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Manchester_City_FC_badge.svg/1200px-Manchester_City_FC_badge.svg.png" width="50px"></td>
-                    <td>Manchester City</td>
-                    <td>24</td>
-                    <td>65</td>
-                </tr>
-                <tr>
-                    <td><img src="https://i0.wp.com/dlscenter.com/wp-content/uploads/2017/06/manchester-united-escudo.png" width="50px"></td>
-                    <td>Manchester United</td>
-                    <td>24</td>
-                    <td>53</td>
-                </tr>
-                <tr>
-                    <td><img src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c4e1.png" width="50px"></td>
-                    <td>Chelsea</td>
-                    <td>24</td>
-                    <td>50</td>
-                </tr>
-                <tr>
-                    <td><img src="https://lsck1892.files.wordpress.com/2013/10/lfc-logo.jpg" width="50px"></td>
-                    <td>Liverpool</td>
-                    <td>24</td>
-                    <td>47</td>
-                </tr>
-                <tr>
-                    <td><img src="https://pbs.twimg.com/profile_images/935075006484221952/eXb9zUIl_400x400.jpg" width="50px"></td>
-                    <td>Tottenham Hotspur</td>
-                    <td>24</td>
-                    <td>45</td>
-                </tr>
-                <tr>
-                    <td><img src="https://lh3.googleusercontent.com/-RUM4WGIMS1w/Vi46-MZntPI/AAAAAAAAAFw/9qFpeMzPDiQ/w506-h750/arsenal_logo.png" width="50px"></td>
-                    <td>Arsenal</td>
-                    <td>24</td>
-                    <td>42</td>
-                </tr>
-                <tfoot>
-                    <tr>
-                        <a href="https://www.premierleague.com/tables">Full Premier League Standings</a>
-                    </tr>
-                </tfoot>
-            </table>
-        </article>
-        <footer>
-            <a href="https://en.wikipedia.org/wiki/2017%E2%80%9318_Premier_League">More about the Premier League</a>
-        </footer>
+        <div class="background">
+          <h1>Soccer Stats</h1>
+        </div>
+        <div>
+          <div class="main">
+            <h1>Top European Teams</h1>
+            <a href="https://www.uefa.com/memberassociations/uefarankings/club/index.html">
+                <div class="tableFlex">
+                    <table class="topTeams" id="topTable">
+                        <tr>
+                            <th>Team</th>
+                            <th>League</th>
+                            <th>Year Established</th>
+                        </tr>
+                        <tr>
+                            <td>Real Madrid</td>
+                            <td>La Liga</td>
+                            <td>1902</td>
+                        </tr>
+                        <tr>
+                            <td>Atletico Madrid</td>
+                            <td>La Liga</td>
+                            <td>1903</td>
+                        </tr>
+                        <tr>
+                            <td>FC Barcelona</td>
+                            <td>La Liga</td>
+                            <td>1899</td>
+                        </tr>
+                        <tr>
+                            <td>Juventus</td>
+                            <td>Serie A</td>
+                            <td>1897</td>
+                        </tr>
+                        <tr>
+                            <td>Paris Saint-Germain</td>
+                            <td>Ligue 1</td>
+                            <td>1970</td>
+                        </tr>
+                        <tr>
+                            <td>Bayern Munich</td>
+                            <td>Bundesliga</td>
+                            <td>1900</td>
+                        </tr>
+                        <tr>
+                            <td>Manchester United</td>
+                            <td>Premier League</td>
+                            <td>1878</td>
+                        </tr>
+                        <tr>
+                            <td>Manchester City</td>
+                            <td>Premier League</td>
+                            <td>1880</td>
+                        </tr>
+                        <tr>
+                            <td>Chelsea</td>
+                            <td>Premier League</td>
+                            <td>1905</td>
+                        </tr>
+                        <tr>
+                            <td>Arsenal</td>
+                            <td>Premier League</td>
+                            <td>1886</td>
+                        </tr>
+                        <tr>
+                            <td>Liverpool</td>
+                            <td>Premier League</td>
+                            <td>1892</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+              </div>
+          </a>
+          <div class="outerFlexFoot">
+            <div class="flexFoot">
+              <h6>Copyright 2018</h6>
+            </div>
+          </div>
+        </div>
     </body>
 </html>

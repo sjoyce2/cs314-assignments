@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Player Search</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="formpage.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+  	<header>
+      <div class="outerFlexHead">
+        <div class="flexHead"> 
+            <a href="index.html" class="toolbar">HOME</a>
+            <a href="formpage.html" class="toolbar">SEARCH STATS</a>
+            <a href="mappage.html" class="toolbar">STADIUM LOCATIONS</a>
+            <a href="apipage.html" class="toolbar">MORE STATS</a>
+        </div>
+      </div>
+    </header>
+  	<div class="contactInfo">
+  		<h2>Find Player</h2>
+  	</div>
+    <form>
+    	<div class="flexForm">
+    		<div class="innerFlex">
+    			<label for="firstName">Player</label>
+    			<input type="text" name="firstName" id="player" required>
+    		</div>
+    		<div class="innerFlex">
+    			<label for="lastName">Team</label>
+    			<input type="text" name="lastName" id="team" required>
+    		</div>
+    		<div class="innerFlex">
+    			<label for="email">League</label>
+    			<input type="text" name="email" id="league" required>
+    		</div>
+    		<div class="innerFlex">
+    			<input type="submit" name="submit" id="submitButton">
+    		</div>
+    	</div>
+    </form>
+    <div class="formData">
+    	<table id="formTable">
+    		<tr>
+    			<th>Player</th>
+    			<th>Team</th>
+    			<th>League</th>
+    		</tr>
+    	</table>
+    </div>
+    <div class="outerFlexFoot">
+        <div class="flexFoot">
+          <h6>Copyright 2018</h6>
+        </div>
+    </div>
+    <script src="formpage.js"></script>
+  </body>
+</html>
